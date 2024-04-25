@@ -2,6 +2,9 @@
 
 set -e
 
+echo "PWD is" $PWD
+find
+
 if [ -z "$FIREBASE_TOKEN" ] && [ -z "$GCP_SA_KEY" ]; then
   echo "Either FIREBASE_TOKEN or GCP_SA_KEY is required to run commands with the firebase cli"
   exit 126
